@@ -1,0 +1,89 @@
+@mixin whitetext {
+    font-family: Rubik;
+    font-size: 16px;
+
+    line-height: 19px;
+    letter-spacing: 0em;
+
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+h4 {
+    font-family: Rubik;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin-bottom: 0px;
+    padding-top: 0;
+}
+
+h5 {
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(37, 61, 50, 1);
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0px;
+
+}
+
+@mixin pNetwork {
+    color: rgba(120, 132, 125, 1);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@mixin greenButton {
+    display: inline-block;
+    cursor: pointer;
+    z-index: 200;
+    height: 78px !important;
+    width: 243px !important;
+    border-radius: 192px;
+    transition-duration: 0.5s !important;
+    background: linear-gradient(328.68deg, #98AA28 13.03%, #D6FF7E 120.61%);
+    box-shadow: 0px 34px 50px 0px rgba(7, 63, 67, 0.07);
+    border: none;
+    opacity: 1;
+}
+
+@mixin button-text {
+    color: rgba(163, 185, 56, 1) !important;
+
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 500;
+    // line-height: 28px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    display: inline-block;
+    text-decoration: underline;
+    position: relative;
+}
+
+@mixin invisible-button {
+    background: none;
+    border: none;
+    display: flex;
+    padding-top: 20px;
+    flex-direction: row;
+
+    & ::after {
+        content: url(/img/Arrow-Right-green-about-us.svg);
+        position: absolute;
+        top: 12%;
+        left: 131px;
+    }
+
+}

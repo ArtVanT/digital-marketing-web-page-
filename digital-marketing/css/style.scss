@@ -1,0 +1,37 @@
+@import 'mixins-variables', 'main', 'header', 'footer', 'container';
+
+body {
+    font-family: Rubik;
+    letter-spacing: 0.04em;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    .container {
+        margin: 0 auto !important;
+        height: 5103px;
+        width: 1440px;
+        background-image: url(/img/background-header-net.svg), url(/img/darkgreen-theme.svg), url(/img/partner.svg), url(/img/process.svg);
+        background-repeat: no-repeat;
+        background-position-y: 0, 0, 17%, 55.4%;
+        clear: both;
+        position: relative;
+
+
+        .cube-img {
+            position: absolute;
+            top: 379px;
+        }
+
+        .subcontainer {
+            max-width: 1331px;
+            height: 100%;
+            margin-left: 81px;
+
+        }
+    }
+}

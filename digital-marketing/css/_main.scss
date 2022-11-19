@@ -1,0 +1,329 @@
+main {
+    height: 3057px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 334px;
+
+    .about-us {
+        height: 1378px;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+
+        .about-content {
+
+            display: flex;
+
+            .who-we-are {
+
+                display: flex;
+                flex-direction: column;
+                height: 380px;
+                width: 500px;
+
+                .paragr-desc-process {
+                    @include whitetext;
+                    @include pNetwork;
+                }
+
+                .invisible-btn {
+                    @include invisible-button;
+
+                    a {
+                        .btn-text1 {
+                            @include button-text;
+                        }
+
+                        //.btn-text1::after {
+                        //@include greenarrow;
+                        // }
+                    }
+                }
+            }
+
+            .what-we-do {
+                display: grid;
+                grid-template-rows: 239px 239px;
+                grid-template-columns: 223px 260px;
+                padding-left: 116px;
+                grid-gap: 95px;
+                padding-top: 82px;
+
+                .grid-list-set {
+
+                    display: flex;
+                    flex-direction: column;
+
+                    .figures {
+                        margin-bottom: 40px;
+                    }
+
+                    .achieve {
+                        font-family: Rubik;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 32px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: rgba(120, 132, 125, 1);
+
+                    }
+                }
+            }
+        }
+
+
+
+        .media-reach {
+            padding-top: 90px;
+            display: flex;
+
+            .bg-picture {
+                width: 670px;
+                height: 470px;
+                background-image: url(/img/Market-table.svg);
+                background-position: top;
+
+            }
+
+            .network {
+                padding-left: 66px;
+
+                .p-network {
+                    @include whitetext;
+                    @include pNetwork;
+                    margin-bottom: 66px;
+                }
+
+                .green-btn1 {
+                    @include greenButton;
+                    @include whitetext;
+                    font-family: Rubik;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+
+                    &:hover {
+                        transform: scale(0.9);
+                    }
+                }
+            }
+        }
+
+        margin-bottom: 25px;
+    }
+
+    .our-process {
+        margin-left: 49px;
+        height: 632px;
+        max-width: 1058px;
+        display: flex;
+        flex-direction: column;
+
+
+        .center-head {
+            text-align: center;
+            line-height: 65px;
+
+        }
+
+        .p-subheader-process {
+            @include pNetwork;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .invisible-button {
+            @include invisible-button;
+            margin: auto;
+
+            a {
+                .btn-text2 {
+                    @include button-text;
+
+                }
+            }
+        }
+
+        //.invisible-button::after:nth-child(1) {
+        //  display: none;
+        // }
+
+        // .invisible-button::after {
+
+        //     content: url(/img/Arrow-Right-green-about-us.svg);
+        //     position: absolute;
+        //     top: 12%;
+        //     left: 131px;
+
+        // }
+
+    }
+
+
+
+    .seo-blog {
+        display: flex;
+        padding-right: 28px;
+        padding-top: 136px;
+
+        .blog-header {
+            .seo-photo img {
+                display: block !important;
+                padding-top: 40px !important;
+                padding-bottom: 12.5px;
+
+            }
+
+            .standart-desc-img {
+                padding-bottom: 18px;
+            }
+
+            .invisible-btn-blog {
+                margin-top: 50px;
+            }
+
+
+
+
+
+            .invisible-btn-blog {
+                width: 206px;
+                height: 68px;
+                background: none;
+                border: 1px solid #A3B938;
+                filter: drop-shadow(0px 34px 50px rgba(7, 63, 67, 0.07));
+                border-radius: 192px;
+                color: #98AA28;
+
+            }
+        }
+
+
+
+
+
+
+        .main-tab {
+            display: flex;
+            flex-direction: column;
+            padding-left: 50px;
+            box-sizing: content-box;
+            margin-top: 120px;
+
+            .blog-content {
+                padding-top: 30px;
+                padding-left: 72px;
+
+                &.header-con-mark {
+                    color: #808371;
+                }
+
+                .header-con-writing,
+                .header-con-mark {
+                    position: relative;
+                    padding-right: 60px;
+                    padding-left: 50px;
+                    display: inline-flex;
+                    font-family: Rubik;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+                    color: #808371;
+                    text-decoration: none;
+
+                    &.header-con-writing:focus:hover,
+                    &.header-con-mark:focus:hover {
+                        font-family: Rubik;
+                        font-size: 24px;
+                        font-weight: 400;
+                        line-height: 28px;
+                        letter-spacing: 0.02em;
+                        text-align: left;
+                        color: #253D32;
+
+                        &.header-con-writing:before,
+                        &.header-con-mark:before {
+                            content: url("/img/green-line.svg");
+                            // padding-bottom: 60%;
+                            position: absolute;
+                            bottom: -20%;
+                            right: 33%;
+
+
+                        }
+                    }
+                }
+
+
+            }
+
+
+
+            .tab-block {
+                display: flex;
+                padding-top: 34px;
+
+
+                .hire {
+                    padding-right: 50px;
+
+                }
+
+                .copywrite,
+                .hire {
+                    display: flex;
+                    flex-direction: column;
+
+                    .img-hire {
+                        padding-top: 12.5px;
+                    }
+
+                    .standart-desc-img {
+                        padding-top: 12.5px;
+                        padding-bottom: 12.5px;
+                    }
+
+                    .desc-hire-copy {
+                        display: inline-block;
+                        font-family: Rubik;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        padding-top: 15px;
+                        padding-bottom: 24px;
+                    }
+
+                    .circle-hire-copy {
+                        height: 68px;
+                        width: 68px;
+                        margin-top: 25px;
+                        border-radius: 192px;
+                        border: 1px solid #A3B938;
+
+
+                        .green-circle {
+                            display: block;
+                            margin: 25% auto;
+                            width: 50%;
+                        }
+                    }
+
+
+
+                }
+            }
+
+
+
+        }
+
+    }
+
+
+}

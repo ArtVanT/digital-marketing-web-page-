@@ -1,0 +1,171 @@
+.subcontainer {
+
+    .header-header {
+        display: flex;
+        padding-right: 243px;
+        padding-top: 40px;
+        justify-content: space-between;
+
+        .logo-header {
+            padding-top: 12px;
+        }
+
+        .header-list {
+            display: inline-flex;
+
+
+            .header-sublist {
+                display: inline-block;
+                margin-left: 48px;
+
+                a {
+                    @include whitetext;
+                    transition-duration: 1.5s;
+                    text-align: left;
+                    font-weight: 400;
+                }
+
+                a:hover {
+                    color: red;
+                }
+
+            }
+        }
+
+        .btn-header {
+            display: inline-block;
+            font-family: Rubik;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: center;
+            @include whitetext;
+            height: 55px;
+            width: 140px;
+
+            border-radius: 116px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(237, 255, 129, 0.4);
+            margin-right: -130px;
+            transition-duration: 1.3s;
+        }
+
+        .btn-header:hover {
+            background: rgba(237, 255, 129, 0.4);
+        }
+    }
+
+    .header-face {
+        width: 804px;
+        height: 490px;
+        padding-top: 40px;
+        margin-left: 321px;
+
+        display: flex;
+        flex-direction: column;
+        @include whitetext;
+        align-items: center;
+
+        .befaf {
+            font-family: Rubik;
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 36px;
+            letter-spacing: 0.02em;
+            text-align: center;
+            padding-top: 0;
+            opacity: 0.8;
+            position: relative;
+        }
+
+        .befaf::before {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 60px;
+            position: absolute;
+            background: #FFFFFF;
+            top: 50%;
+            right: 200px;
+            opacity: 0.4;
+            z-index: -2;
+        }
+
+        .befaf::after {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 60px;
+            position: absolute;
+            background: #FFFFFF;
+            top: 50%;
+            left: 200px;
+            opacity: 0.4;
+            z-index: -2;
+        }
+
+        h1 {
+            border: none;
+            display: inline-block;
+            padding-top: 0px;
+            font-family: Rubik;
+            font-size: 90px;
+            white-space: nowrap;
+            font-weight: 600;
+            line-height: 0;
+            letter-spacing: 0.04em;
+            text-align: left;
+            position: relative;
+        }
+
+        h1::before {
+            content: url(/img/Wave.svg);
+            position: absolute;
+            right: 0;
+            top: 18px;
+
+        }
+
+        .p-header {
+            display: inline-block;
+            @include whitetext;
+            opacity: 0.6;
+            padding-bottom: 42px;
+            font-family: Rubik;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 40px;
+            letter-spacing: 0em;
+            text-align: center;
+
+        }
+
+        .green-btn {
+            @include greenButton;
+
+            &:hover {
+                transform: scale(0.9);
+            }
+
+            a {
+
+                text-decoration: none;
+                @include whitetext;
+                font-family: Rubik;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                text-align: left;
+
+
+            }
+        }
+
+
+
+
+
+    }
+}
